@@ -7280,11 +7280,11 @@ another auto-completion with different ac-sources (e.g. ac-php)")
           (setq reg-beg (+ reg-beg 2))
           )
          ;; tests/demo.chtml
-         ((string= web-mode-engine "ctemplate")
-          (save-excursion
-            (when (web-mode-rsf "{{#?")
-              (setq reg-col (current-column))))
-          )
+         ;; ((string= web-mode-engine "ctemplate")
+         ;;  (save-excursion
+         ;;    (when (web-mode-rsf "{{#?")
+         ;;      (setq reg-col (current-column))))
+         ;;  )
          ((string= web-mode-engine "dust")
           (save-excursion
             (when (web-mode-rsf "{@")
